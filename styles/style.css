@@ -80,10 +80,10 @@ nav li a {
 
 #conocenos {
     width: 100%;
-    float: left;
+    float: center;
     margin-right: 20px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 /* GalerÃ­a Section*/
