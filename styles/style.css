@@ -1,0 +1,111 @@
+/** Estilos Personalizadds par ala web de bootstrap **/
+.bg-grey {
+    background-color: rgb(119 114 114);
+}
+
+.btn-outline-success {
+    color: #00ff3a;
+    border-color: #00ff3a;
+}
+
+nav li a {
+    color: #fff !important;
+}
+
+/* HERO SECTION */
+#hero {
+    position: relative;
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-position: right;
+    height: 90vh;
+}
+
+#hero h2 {
+    position: absolute;
+    top: 30px;
+    right: 45%;
+    color: white;
+    font-family: rotulo;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px navy;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 15px;
+    border-radius: 10px 50px 10px 50px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: lightcoral;
+}
+
+/* Historia Section*/
+#historia h1 {
+    width: 60%;
+    color: #ffffff;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(255, 94, 0);
+}
+
+#historia p {
+    width: 60%;
+    color: #ffffff;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(255, 94, 0);
+}
+
+.grid2col {
+    display: grid;
+    /* propiedad de estilo para distribuciÃ³n grid */
+    grid-template-columns: 50% 50%;
+}
+
+.col2 {
+    padding: 10%;
+}
+
+/******** InstalaciÃ³n ***********/
+#conocenos {
+    background-color: rgb(99, 96, 96);
+    padding: 30px;
+}
+
+#conocenos {
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* GalerÃ­a Section*/
+#galeria h5 {
+    color: black;
+}
+
+#galeria p {
+    color: black
+}
+
+/* footer Section */
+.footer {
+    padding: 2%;
+    font-size: 1.2rem;
+    background: #000000;
+}
+
+.footer .item {
+    color: #ffffff;
+}
+
+.footer p {
+    color: #ffffff;
+}

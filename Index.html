@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favicon.png" type="images/favicon.png">
+    <link rel="stylesheet" href="styles/style.css"
+</head>
+<body class="bg-dark">
+    <div id="wrapper" class="container-fluid">
+        <!--Barra de navegación bootstrap de la página-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-grey sticky-top">
+            <a class="navbar-brand" href="#"><img width="30" src="images/favicon.png" alt="que os den a todos"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button><!--font awsome del menú hamburguesa-->
+            
+            <!-- aquí comienzan los botones de la barra de navegación-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#historia">Introducción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cards">animes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galeria">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#conocenos">Conocenos</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+        </nav>
+        <!--Hero Section de la página-->
+        <section id="hero">
+          <h2>Animes</h2>
+        </section>
+        <!--Pequeña sección para contar algo sobre los animes-->
+        <section id="historia">
+          <p>El anime es un estilo de animación japonesa, si no es de japon no se le puede llamar anime, se le llama animación. Por eso se ha creado un estereotipo sobre las pesonas que ven anime... ¡Cómo si los que ven anime fueran un tipo de persona diferente a los que ven series de netflix! Ya os digo que si pensais eso estais equivocados. El anime es solo un estilo artistico; una persona que consume este producto es igual que aquella persona que ve cualquier película de disney, puesto que los generos de cada anime son diferentes y a demás no se diferencian en nada a los que vemos en otras series: ciencia ficción, romence, comedia, sobrenatural...</p>
+        </section>
+        <!--ejemplos de animes con "certificado de madre", que quiere decir que a mi madre le gusta, eso es como un sello de calidad-->
+        <section id="cards">
+          <h1 class="titulo-seccion">Algunos Animes</h1>
+          <!--un grupo de cards (cards-deck) con foto texto y botón-->
+    <!--primero organizo un grid de 1 en sm 2 en md 4 en tamaño lg-->
+          <div class="container">
+            <div class="row"> <!--engañoso. row es un grupo de columnas-->
+              <div class="col-sm-6 col-lg-3 my-5">
+
+                <!--PRIMERA DE MIS CARD, VOY A AÑADIRDE UNA VENTANA MODAL-->
+                <div class="card">
+                  <img src="https://avatarfiles.alphacoders.com/178/178117.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Dororo</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sinopsis</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dororo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                        <div class="modal-body">
+                        Un anime de aventura y sobrenatural ubicado en un japón feudal con elementos de fantasía. EN el una pequeña niña acompaña a un joven maldito en su viaje para recuperarse a sí mismo
+                        </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 my-5">
+                <div class="card">
+                  <img src="https://pbs.twimg.com/profile_images/875373653222858752/scd5lBIY_400x400.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Made In Abyss</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Sinopsis</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dororo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                        <div class="modal-body">
+                        Un anime de aventura y sobrenatural ubicado en un japón feudal con elementos de fantasía. EN el una pequeña niña acompaña a un joven maldito en su viaje para recuperarse a sí mismo
+                        </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 my-5">
+                <div class="card">
+                  <img src="https://images.gemquery.com/222/thumb_content_2223931.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Re:Creators</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sinopsis</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dororo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                        <div class="modal-body">
+                        Un anime de aventura y sobrenatural ubicado en un japón feudal con elementos de fantasía. EN el una pequeña niña acompaña a un joven maldito en su viaje para recuperarse a sí mismo
+                        </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 my-5">
+                <div class="card">
+                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Video6/v4/ec/a2/24/eca2249b-853e-67fc-f10b-fdc57abed709/source/400x400-75.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Log Horizon</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sinopsis</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dororo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                        <div class="modal-body">
+                        Un anime de aventura y sobrenatural ubicado en un japón feudal con elementos de fantasía. EN el una pequeña niña acompaña a un joven maldito en su viaje para recuperarse a sí mismo
+                        </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--apartado informativo -->
+        <section id="conocenos">
+          <div style="text-align: center;">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/e91G8m9uM_0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div style="text-align: right;">
+          </div>
+    
+    
+        </section>
+        <!--carousel de boostrap para suceder imagenes-->
+        <section id="galeria">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height: 100vh">
+                <img src="images/loghorizon.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Log Horizon</h5>
+                  <p>Ciencia ficcion</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height: 100vh">
+                <img src="images/madeinabyss.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Made In Abyss</h5>
+                  <p>Fantasía Pura</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height: 100vh">
+                <img src="images/dororo.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Dororo</h5>
+                  <p>Fantasía Pura</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="height: 100vh">
+                <img src="images/recreators.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Re:Creators</h5>
+                  <p>Sobrenatural</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!--afooter de la página -->
+        <footer class="footer">
+          <div class="item">Contáctanos en : animesanfisbena@gmail.com Y Síguenos en nuestras redes sociales para no perderte nada:</div>
+          <div class="item">Tweeter  @AnimesConCertificadodemadre</div>
+          <div class="item">Facebook  @animesanfisbena</div>
+          <div class="item">Si eso para completar el footer puede llamarnos a este numero inventado: 123 45 67 89</div>
+          <form class="formulario">
+            <div class="form-group">
+              <label for="exampleInputEmail1">
+                  <p>Correo Electrónico</p>
+              </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">
+                  <p>danos tu contraseña</p>
+              </label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">
+                  <p>confirma que nos daras tu Contraseña</p>
+              </label>
+              <input type="password" class="form-control" id="exampleInputPassword2">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">
+                  <p>Acepta regalar sus datos más personales para que nosotros podamos venderlos</p>
+              </label>
+            </div>
+              <button type="submit" class="btn btn-primary">
+                  <p>Continuar</p>
+              </button>
+          </form>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>$(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })</script>
+</body>
+</html>
