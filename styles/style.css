@@ -132,6 +132,10 @@ a[class|=carousel-control] {
     padding: 0.5rem 1rem;
   }
 
+  .carousel-item img.d-block {
+    aspect-ratio: 16/9;
+  }
+
 /* footer Section */
 .footer {
     padding: 2%;
